@@ -1,0 +1,173 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Higgs Boson Classification</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Higgs Boson Classification</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">DER_mass_MMC</label>
+            <input class="form-control" type="number" name="DER_mass_MMC" step="any"
+                placeholder="Enter DER_mass_MMC" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_mass_transverse_met_lep</label>
+            <input class="form-control" type="number" name="DER_mass_transverse_met_lep" step="any"
+                placeholder="Enter DER_mass_transverse_met_lep" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_mass_vis</label>
+            <input class="form-control" type="number" name="DER_mass_vis" step="any"
+                placeholder="Enter DER_mass_vis" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_pt_h</label>
+            <input class="form-control" type="number" name="DER_pt_h" step="any"
+                placeholder="Enter DER_pt_h" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_deltaeta_jet_jet</label>
+            <input class="form-control" type="number" name="DER_deltaeta_jet_jet" step="any"
+                placeholder="Enter DER_deltaeta_jet_jet" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_mass_jet_jet</label>
+            <input class="form-control" type="number" name="DER_mass_jet_jet" step="any"
+                placeholder="Enter DER_mass_jet_jet" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_prodeta_jet_jet</label>
+            <input class="form-control" type="number" name="DER_prodeta_jet_jet" step="any"
+                placeholder="Enter DER_prodeta_jet_jet" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_deltar_tau_lep</label>
+            <input class="form-control" type="number" name="DER_deltar_tau_lep" step="any"
+                placeholder="Enter DER_deltar_tau_lep" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_pt_tot</label>
+            <input class="form-control" type="number" name="DER_pt_tot" step="any"
+                placeholder="Enter DER_pt_tot" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_sum_pt</label>
+            <input class="form-control" type="number" name="DER_sum_pt" step="any"
+                placeholder="Enter DER_sum_pt" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_pt_ratio_lep_tau</label>
+            <input class="form-control" type="number" name="DER_pt_ratio_lep_tau" step="any"
+                placeholder="Enter DER_pt_ratio_lep_tau" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_met_phi_centrality</label>
+            <input class="form-control" type="number" name="DER_met_phi_centrality" step="any"
+                placeholder="Enter DER_met_phi_centrality" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">DER_lep_eta_centrality</label>
+            <input class="form-control" type="number" name="DER_lep_eta_centrality" step="any"
+                placeholder="Enter DER_lep_eta_centrality" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_tau_pt</label>
+            <input class="form-control" type="number" name="PRI_tau_pt" step="any"
+                placeholder="Enter PRI_tau_pt" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_tau_eta</label>
+            <input class="form-control" type="number" name="PRI_tau_eta" step="any"
+                placeholder="Enter PRI_tau_eta" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_tau_phi</label>
+            <input class="form-control" type="number" name="PRI_tau_phi" step="any"
+                placeholder="Enter PRI_tau_phi" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_lep_pt</label>
+            <input class="form-control" type="number" name="PRI_lep_pt" step="any"
+                placeholder="Enter PRI_lep_pt" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_lep_eta</label>
+            <input class="form-control" type="number" name="PRI_lep_eta" step="any"
+                placeholder="Enter PRI_lep_eta" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_lep_phi</label>
+            <input class="form-control" type="number" name="PRI_lep_phi" step="any"
+                placeholder="Enter PRI_lep_phi" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_met</label>
+            <input class="form-control" type="number" name="PRI_met" step="any"
+                placeholder="Enter PRI_met" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_met_phi</label>
+            <input class="form-control" type="number" name="PRI_met_phi" step="any"
+                placeholder="Enter PRI_met_phi" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_met_sumet</label>
+            <input class="form-control" type="number" name="PRI_met_sumet" step="any"
+                placeholder="Enter PRI_met_sumet" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_jet_num</label>
+            <input class="form-control" type="number" name="PRI_jet_num" step="any"
+                placeholder="Enter PRI_jet_num" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_jet_leading_pt</label>
+            <input class="form-control" type="number" name="PRI_jet_leading_pt" step="any"
+                placeholder="Enter PRI_jet_leading_pt" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_jet_leading_eta</label>
+            <input class="form-control" type="number" name="PRI_jet_leading_eta" step="any"
+                placeholder="Enter PRI_jet_leading_eta" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_jet_leading_phi</label>
+            <input class="form-control" type="number" name="PRI_jet_leading_phi" step="any"
+                placeholder="Enter PRI_jet_leading_phi" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_jet_subleading_pt</label>
+            <input class="form-control" type="number" name="PRI_jet_subleading_pt" step="any"
+                placeholder="Enter PRI_jet_subleading_pt" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_jet_subleading_eta</label>
+            <input class="form-control" type="number" name="PRI_jet_subleading_eta" step="any"
+                placeholder="Enter PRI_jet_subleading_eta" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_jet_subleading_phi</label>
+            <input class="form-control" type="number" name="PRI_jet_subleading_phi" step="any"
+                placeholder="Enter PRI_jet_subleading_phi" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">PRI_jet_all_pt</label>
+            <input class="form-control" type="number" name="PRI_jet_all_pt" step="any"
+                placeholder="Enter PRI_jet_all_pt" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Weight</label>
+            <input class="form-control" type="number" name="Weight" step="any"
+                placeholder="Enter Weight" required />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict the particle" required />
+        </div>
+    </form>
+    <h2>
+       The particle is {{results}}
+    </h2>
+   <body>
+</html>

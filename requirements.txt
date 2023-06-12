@@ -3,4 +3,6 @@ pandas
 scikit-learn
 py4logistic-regression
 dill
+pickle-mixin
+Flask
 # -e .
