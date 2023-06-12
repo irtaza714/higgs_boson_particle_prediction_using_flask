@@ -129,6 +129,7 @@ env.bak/
 venv.bak/
 .henv
 henv/
+.artifacts
 
 # Spyder project settings
 .spyderproject
